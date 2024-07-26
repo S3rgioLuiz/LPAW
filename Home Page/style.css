@@ -45,8 +45,7 @@ html, body {
     background: #e04e3d;
     height: 8vh;
     width: 100%;
-    border: black 1px solid;
-    border-radius: 15%;
+    border: black 2px solid;
     font-weight: bold;
 }
 
