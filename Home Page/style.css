@@ -1,0 +1,104 @@
+html, body {
+    overflow: hidden;
+    background-image: url(fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jogo {
+    padding: 3%;
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(to top left, #e25117, #ffc013);
+    border: black solid 5px
+}
+
+.col-5.align-self-center.d-flex.justify-content-center.align-items-center {
+    height: 100vh;
+}
+
+.animate__pulse.logo {
+    height: 12vh;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.animate__backInLeft.esquerda{
+    animation-duration: 1.5s;
+}
+
+.animate__backInRight.direita{
+    animation-duration: 1.5s;
+}
+
+.animate__backInDown {
+    animation-duration: 3s;
+}
+
+.tecla {
+    height: 25vh;
+    margin-top: 5.95vh;
+    margin-bottom: 5.95vh;
+}
+
+.jogar {
+    background: #e04e3d;
+    height: 8vh;
+    width: 100%;
+    border: black 1px solid;
+    border-radius: 15%;
+    font-weight: bold;
+}
+
+.jogar:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.shuriken1 {
+    height: 8vh;
+    animation: horario 3s linear infinite;  
+}
+
+@keyframes horario {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg); 
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.shuriken2 {
+    height: 8vh;
+    animation: anti-horario 3s linear infinite;
+}
+
+@keyframes anti-horario {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-90deg); 
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    75% {
+        transform: rotate(-270deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
